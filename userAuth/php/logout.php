@@ -5,9 +5,9 @@ Check if the existing user has a session
 if it does
 destroy the session and redirect to login page
 */
-
-if($_SESSION['$loginuser']="username"){
-    echo session_destroy();
+session_destroy(
+if($_SESSION['$loginuser']="username")){
+    return "dashboard.php"
         }
 }
 

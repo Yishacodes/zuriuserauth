@@ -12,11 +12,11 @@ function loginUser($email, $password){
         Finish this function to check if username and password 
     from file match that which is passed from the form
     */
-    if($_SESSION['$loginuser']="username"){
-echo "Go back to Dashboard"
+    if($_SESSION['loginUser']="username"){
+return 'dashboard.php'
     }
     else{
-      echo "GO back to Login page"  
+      return  'php\login.php' 
     }
 }
 
