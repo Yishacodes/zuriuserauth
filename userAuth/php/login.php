@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['submit'])){
-    $username = $_POST['fullname'];
-    $password = $_POST['password']
+    $email = $_POST['fullname'];
+    $password = $_POST['password'];
 
 loginUser($email, $password);
 
@@ -12,13 +12,16 @@ function loginUser($email, $password){
         Finish this function to check if username and password 
     from file match that which is passed from the form
     */
-    if($_SESSION['loginUser']="username"){
+    if($_SESSION['loginUser']="email"){
 return 'dashboard.php'
-    }
-    else{
+     ;}
+    };
+    /*
+    else
       return  'php\login.php' 
-    }
-}
+    };
+};
 
 echo "HANDLE THIS PAGE";
-
+*/
+?>
